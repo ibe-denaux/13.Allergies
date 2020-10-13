@@ -1,13 +1,13 @@
-allergies_dict = {
-    "eggs" : 1,
-    "peanuts" : 2,
-    "shellfish" : 4,
-    "strawberries" : 8,
-    "tomatoes" : 16,
-    "chocolate" : 32,
-    "pollen" : 64,
-    "cats" : 128,
-}
+allergies_types = [
+    "eggs",
+    "peanuts",
+    "shellfish",
+    "strawberries",
+    "tomatoes",
+    "chocolate",
+    "pollen",
+    "cats",
+]
 class Allergies:
     def __init__(self, sum):
         while sum > 256:
@@ -28,10 +28,10 @@ class Allergies:
         binSum = binSum[2:]
         binSum = binSum[::-1]
 
-        # check for each digit if it is one, if one add the key to the allergies list
+        # check for each digit if it is "1". If so, add the key to the allergies list
         for i, digit in enumerate(binSum):
             if digit == "1":
-                allergies_list.append(list(allergies_dict.keys())[i])
+                allergies_list.append(allergies_types[i])
         return allergies_list
 
 
