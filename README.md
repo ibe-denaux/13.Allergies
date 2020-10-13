@@ -1,2 +1,1 @@
-# Allergies
-### made by Idrees & Nathan
+# 13.Allergies
