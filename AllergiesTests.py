@@ -2,7 +2,6 @@ import unittest
 
 from Allergies import Allergies
 
-
 class AllergiesTests(unittest.TestCase):
 
     def test_no_allergies_means_not_allergic(self):
